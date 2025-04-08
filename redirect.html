@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    const queryString = window.location.search;
+    const customSchemeUrl = `chuj://loginResponse${queryString}`;
+    window.location.href = customSchemeUrl;
+  </script>
+</html>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <script>
-    const queryString = window.location.search;
-    const customSchemeUrl = `chuj://loginResponse${queryString}`;
+    const hashFragment = window.location.hash;
+    const customSchemeUrl = `chuj://loginResponse${hashFragment.replace('#', '?')}`;
     window.location.href = customSchemeUrl;
   </script>
 </html>
